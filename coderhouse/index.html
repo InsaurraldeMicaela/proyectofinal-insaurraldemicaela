@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Food Store</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--insercion de documento css-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--links de insercion de estilos a traves de pagwebs-->
+  </head>
+
+  <body>
+    <header class="header" id="inicio">
+      <img src="img/hamburguesa.svg" alt="" class="cosito" />
+      <nav class="menu-navegacion" id="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicio">Quienes Somos</a>
+        <a href="#productos">Productos Destacados</a>
+        <a href="#combos">Combos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="contenedor head" id="inicio">
+        <h1 class="titulo">THE FOOD STORE</h1>
+        <p class="copy">
+          Pizza, hamburguesa,bebidas… ¿Cómo pueden ser tan rico? Nos preguntamos
+          lo mismo
+        </p>
+      </div>
+    </header>
+    <main>
+      <!--todo el contenido principal va dentro de main-->
+      <section class="service contenedor" id="servicio">
+        <h2 class="subtitulo">Quienes somos</h2>
+        <div class="contenedor-servicio">
+          <img src="img/chef.svg" alt="" class="eso" />
+          <div class="checklist servicio">
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">1 </span> Dónde Nace
+              </h3>
+              <p>
+                The Food Store nace en Buenos Aires, Argentina , con la premisa
+                de ofrecer hamburguesas y pizzas de calidad premium, con sitios
+                virtuales de ambiente moderno, distendido y agradable, diseñados
+                en detalle.
+              </p>
+            </div>
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">2 </span>Nuestra Mision
+              </h3>
+              <p>
+                Fascinar a nuestros clientes con la experiencia tanto como
+                nosotros lo estamos,haciendo The Food Store un centro de culto
+                para los fanáticos de las hamburguesas,siempre estamos
+                encontrando formas de demostrar nuestro compromiso con nuestros
+                clientes y nuestra comida.
+              </p>
+            </div>
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">3</span>Somos Apasionados
+              </h3>
+              <p>
+                Por nuestras Hamburguesas 🍔 artesanales 100% carne vacuna con
+                delicioso pan de papa y 🍟 ☞ 🥑 opciones veggie 🥗 ensaladas.
+                Sentí la calidad de cada bocado 🍟💥 ¡Nuestras papas fritas te
+                volarán la cabeza! 😋🔥 Acompañalas con cerveza 🍺, gaseosas 🥤
+                o incluso una rica limonada 🍋
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="productos">
+        <div class="contenedor">
+          <h2 class="subtitulo">Productos Destacados</h2>
+          <div class="contenedor-galleria">
+            <img
+              src="img/burguer+papas.jpg"
+              alt="hamburguesa y papas"
+              class="img-galleria"
+            />
+            <img src="img/bebidas.jpg" alt="bebidas" class="img-galleria" />
+            <img src="img/burguer.jpg" alt="bebidas" class="img-galleria" />
+            <img src="img/lunch.jpg" alt="lunch" class="img-galleria" />
+            <img src="img/pizza.jpg" alt="comida" class="img-galleria" />
+            <img src="img/bebidasnatu.jpg" alt="" class="img-galleria" />
+          </div>
+        </div>
+      </section>
+
+      <setion class="contenedor" id="combos">
+        <section class="experts">
+          <h2 class="subtitulo">COMBOS</h2>
+          <div class="cont-expert">
+            <img src="img/combo.svg" alt="" />
+            <h3 class="n-expert">PARA DOS</h3>
+          </div>
+          <div class="cont-expert">
+            <img src="img/ensalada.svg" alt="" />
+            <h3 class="n-expert">SANO</h3>
+          </div>
+          <div class="cont-expert">
+            <img src="img/papas.svg" alt="" />
+            <h3 class="n-expert">PARA VOS</h3>
+          </div>
+        </section>
+      </setion>
+    </main>
+    <footer id="contacto">
+      <div class="container">
+        <form id="contact" action="/php/registro.php" method="POST">
+          <h3>¡Contactanos!</h3>
+          <h4>Para recibir una atención personalizada</h4>
+          <fieldset>
+            <input
+              placeholder="Nombre Completo"
+              type="text"
+              name="nombre"
+              tabindex="1"
+              required
+              autofocus
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Coloque su Email"
+              type="text"
+              name="mail"
+              tabindex="2"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Su Número de Telefono"
+              type="number"
+              name="telefono"
+              tabindex="3"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Su Sitio Web (opcional)"
+              type="text"
+              name="web"
+              tabindex="4"
+            />
+          </fieldset>
+          <fieldset>
+            <textarea
+              placeholder="Introduzca su comentario aquí...."
+              type="text"
+              name="comentario"
+              tabindex="5"
+              required
+            >
+            </textarea>
+          </fieldset>
+          <fieldset>
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              data-submit="...Sending"
+            >
+              Enviar
+            </button>
+          </fieldset>
+          <p class="by">
+            Designed by
+            <a
+              href="https://www.facebook.com/designlogoup/"
+              target="_blank"
+              title=""
+              >mica.com</a
+            >
+          </p>
+        </form>
+      </div>
+      <div class="line"></div>
+      <!--linea blanca-->
+      <div class="footer-content">
+        <div class="contacto">
+          <h3 class="brand">THE FOOD</h3>
+          <p>©thefood2023</p>
+        </div>
+        <div class="social-media">
+          <!--links de las redes con sus iconos-->
+          <a
+            href="https://www.facebook.com/designlogoup/"
+            class="social-media-icon"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="/" class="social-media-icon">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/designlogoup/"
+            class="social-media-icon"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!--insercion de documento js-->
+    <script src="/menu.js"></script>
+    <script src="/ligthbox.js"></script>
+  </body>
+</html>
